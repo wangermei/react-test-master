@@ -1,0 +1,25 @@
+{
+    "entry": "src/index.js",
+   "disableCSSModules": false,
+   "less": false,
+   "publicPath": "/",
+   "autoprefixer": null,
+   "proxy": {
+      "/api": {
+        "target": "http://127.0.0.1:8080/",
+        "changeOrigin": true
+      }
+    },
+   "extraBabelPlugins": [
+     "transform-runtime",
+     "dva-hmr",
+     ["import", { "libraryName": "antd", "libraryDirectory": "lib", "style": "css" }]
+   ],
+   "env": {
+     "development": {
+       "extraBabelPlugins": [
+         "dva-hmr"
+       ]
+     }
+   }
+}
