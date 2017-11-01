@@ -6,6 +6,10 @@ import Index from './components/Index/Index';
 import Greeting from './routes/Greeting';
 import LoginButton from './routes/LoginButton';
 import Logical from './routes/Logical';
+import ShowWarn from './routes/ShowWarn';
+import Lists from './routes/Lists';
+import Form from './routes/Form';
+import FormLifeStateUp from './routes/FormLifeStateUp';
 
 function RouterConfig({ history }) {
   return (
@@ -17,6 +21,10 @@ function RouterConfig({ history }) {
         <Route path="/greeting" component={Greeting} />
         <Route path="/login" component={LoginButton} />
         <Route path="/logical" component={Logical} />
+        <Route path="/warn" component={ShowWarn} />
+        <Route path="/lists" component={Lists} />
+        <Route path="/form" component={Form} />
+        <Route path="/stateUp" component={FormLifeStateUp} />
       </Switch>
     </Router>
   );
