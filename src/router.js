@@ -10,6 +10,7 @@ import ShowWarn from './routes/ShowWarn';
 import Lists from './routes/Lists';
 import Form from './routes/Form';
 import FormLifeStateUp from './routes/FormLifeStateUp';
+import Calculator from './routes/Calculator';
 
 function RouterConfig({ history }) {
   return (
@@ -25,6 +26,7 @@ function RouterConfig({ history }) {
         <Route path="/lists" component={Lists} />
         <Route path="/form" component={Form} />
         <Route path="/stateUp" component={FormLifeStateUp} />
+        <Route path="/calculator" component={Calculator} />
       </Switch>
     </Router>
   );
