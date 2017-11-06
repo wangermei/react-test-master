@@ -11,6 +11,8 @@ import Lists from './routes/Lists';
 import Form from './routes/Form';
 import FormLifeStateUp from './routes/FormLifeStateUp';
 import Calculator from './routes/Calculator';
+import Modal from './routes/Modal';
+import Include from './routes/Include';
 
 function RouterConfig({ history }) {
   return (
@@ -27,6 +29,8 @@ function RouterConfig({ history }) {
         <Route path="/form" component={Form} />
         <Route path="/stateUp" component={FormLifeStateUp} />
         <Route path="/calculator" component={Calculator} />
+        <Route path="/modal" component={Modal} />
+        <Route path="/include" component={Include} />
       </Switch>
     </Router>
   );
