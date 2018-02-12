@@ -13,6 +13,7 @@ import FormLifeStateUp from './routes/FormLifeStateUp';
 import Calculator from './routes/Calculator';
 import Modal from './routes/Modal';
 import Include from './routes/Include';
+import GetJsonData from './routes/GetJsonData';
 
 function RouterConfig({ history }) {
   return (
@@ -31,6 +32,7 @@ function RouterConfig({ history }) {
         <Route path="/calculator" component={Calculator} />
         <Route path="/modal" component={Modal} />
         <Route path="/include" component={Include} />
+        <Route path="/getJsonData" component={GetJsonData} />
       </Switch>
     </Router>
   );

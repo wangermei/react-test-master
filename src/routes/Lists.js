@@ -53,20 +53,20 @@ class Lists extends React.Component {
 
   render() {
     const posts = [
-      {id: 1, title: 'Hello World', content: 'Welcome to learning React!'},
-      {id: 2, title: 'Installation', content: 'You can install React from npm.'},
+      { id: 1, title: 'Hello World', content: 'Welcome to learning React!' },
+      { id: 2, title: 'Installation', content: 'You can install React from npm.' },
     ];
     return (
-      <Blog posts={posts}/>
+      <Blog posts={posts} />
     );
   }
 }
 function Blog(props) {
   const sidebar = (
     <ul>
-      {props.posts.map((post) =>
+      { props.posts.map((post) =>
         <li key={post.id}>{post.title}</li>,
-      )}
+      ) }
     </ul>
   );
   const content = (
